@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Member - UBIG</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar (Sama dengan halaman utama) -->
+    <nav class="bg-white shadow-md relative">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html/#hero">
+            <div class="flex items-center font-semibold scale-125">
+                <span class="text-red-700 font-bold">U</span>BIGKOSBOY
+            </div>
+        </a>
+            <!-- <div class="hidden md:flex md:space-x-4">
+               
+                <a href="/index.html/#hero" class="text-white duration-200 bg-red-600 rounded-md hover:bg-red-500 p-2 px-3">Kembali</a>
+            </div> -->
+        </div>
+    </nav>
+
+    <!-- Konten Profil -->
+    <div class="container mx-auto px-6 py-12">
+        <!-- Header Profil -->
+        <div class="text-center mb-12">
+            <img src="img/galuh.jpg" alt="Foto Profil" 
+                 class="w-48 h-48 rounded-full mx-auto mb-6 shadow-xl border-4 border-red-600">
+            <h1 class="text-4xl font-bold text-gray-800 mb-2">Galuh</h1>
+            <p class="text-xl text-red-600">Lead Developer</p>
+        </div>
+
+        <!-- Detail Profil -->
+        <div class="grid md:grid-cols-2 gap-8 bg-white rounded-xl shadow-lg p-8">
+            <!-- Kolom Kiri -->
+            <div class="space-y-6">
+                <div class="border-l-4 border-red-600 pl-4">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-2">Biodata</h2>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><span class="font-semibold">Nama Lengkap:</span> Galuh Saputra</li>
+                        <li><span class="font-semibold">Tempat/Tgl Lahir:</span> Blitar, 12 Desember 2007</li>
+                        <li><span class="font-semibold">Sekolah:</span> SMK Brantas Karangkates </li>
+                    </ul>
+                </div>
+
+                <div class="border-l-4 border-red-600 pl-4">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-2">Hobi</h2>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full">Programming</span>
+                        <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full">Basket</span>
+                        <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full">Membaca</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kolom Kanan -->
+            <div class="space-y-6">
+                <div class="border-l-4 border-red-600 pl-4">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-2">Musik Favorit</h2>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>Bohemian Rhapsody - Queen</li>
+                        <li>Yellow - Coldplay</li>
+                        <li>Happier Than Ever - Billie Eilish</li>
+                    </ul>
+                </div>
+
+                <div class="border-l-4 border-red-600 pl-4">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-2">Quotes</h2>
+                    <blockquote class="italic text-gray-600 border-l-2 border-red-600 pl-4">
+                        "Kode yang baik adalah seperti puisi - logis namun penuh keindahan"
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tombol Kembali -->
+        <div class="text-center mt-8">
+            <a href="index.html/#member" 
+               class="inline-flex items-center bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd"/>
+                </svg>
+                Kembali ke Daftar Member
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-12 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 UBIG. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
