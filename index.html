@@ -1,11 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" class="light">
+    <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>UBIG</title>
   <link rel="icon" href="https://th.bing.com/th/id/OIP.bxm-cuWjeRN_6VVdsmDfhwAAAA?rs=1&pid=ImgDetMain" type="image/x-icon">
   <script src="https://cdn.tailwindcss.com"></script>
+  <head>
+    <!-- Tambahkan di dalam head -->
+    <script>
+      // Fungsi tema
+      function toggleTheme() {
+        const html = document.documentElement;
+        const isDark = html.classList.contains('dark');
+        
+        if(isDark) {
+          html.classList.remove('dark');
+          localStorage.setItem('theme', 'light');
+        } else {
+          html.classList.add('dark');
+          localStorage.setItem('theme', 'dark');
+        }
+      }
+  
+      // Init tema dari localStorage
+      function initTheme() {
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.classList.add(savedTheme);
+      }
+      
+      // Panggil init saat load
+      initTheme();
+    </script>
+  
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       let currentSlide = 0;
@@ -104,22 +131,22 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="bg-gradient-to-r from-red-50 to-blue-50 py-12 md:py-24 ">
+  <section class="bg-gradient-to-r from-red-50 to-blue-50 py-12 md:py-28 ">
     <div class="container mx-auto px-6 ">
       <div class="flex flex-col md:flex-row items-center gap-8">
         <!-- Slider Gambar -->
         <div class="w-full md:w-1/2 rounded-lg shadow-xl overflow-hidden">
           <div class="slider-container">
             <div class="slide">
-              <img src="img/eschool.png" 
+              <img src="https://assets.site-static.com/userFiles/805/image/events-in-alexandria-va-april-2022.jpg" 
                    class="w-full h-full object-cover" alt="Tech 1">
             </div>
             <div class="slide">
-              <img src="img/nobox.png" 
+              <img src="https://www.scetv.org/sites/default/files/blogs/Hello%20April_AdobeStock_140552117_990x601.jpg" 
                    class="w-full h-full object-cover" alt="Tech 2">
             </div>
             <div class="slide">
-              <img src="img/upskil.png" 
+              <img src="https://i2.wp.com/creazilla-store.fra1.digitaloceanspaces.com/cliparts/1723058/april-clipart-md.png" 
                    class="w-full h-full object-cover" alt="Tech 3">
             </div>
           </div>
@@ -318,7 +345,7 @@
   
         <!-- Card 2-10 (copy dan ubah data berikut) -->
         <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 w-full max-w-xs">
-          <img src="img/dim1.jpg" alt="Member 2" 
+          <img src="img/dim3.jpg" alt="Member 2" 
                class="w-full h-48 object-cover bg-gray-200">
           <div class="p-6">
             <h3 class="text-xl font-bold text-gray-800">Dimas Vico</h3>
