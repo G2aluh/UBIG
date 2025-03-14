@@ -41,6 +41,10 @@
       });
     </script>
     <style>
+       /* Smooth Scroll */
+       html {
+        scroll-behavior: smooth;
+      }
       /* Slider */
       .slider-container {
         position: relative;
@@ -103,41 +107,40 @@
     </style>
   </head>
   <body class="bg-gray-100">
-    <!-- Navbar -->
-    <nav class="bg-white shadow-2xl shadow-white relative">
-      <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-        <!-- Logo -->
-        <a href="#hero">
-          <div class="flex items-center font-semibold scale-125">
-            <span class="text-red-700 font-bold">U</span>BIGKOSBOY
-          </div>
-        </a>
-  
-        <!-- Desktop Menu -->
-        <div class="hidden md:flex md:space-x-4">
-          <a href="#hero" class="text-gray-700 hover:text-red-500">Home</a>
-          <a href="#about" class="text-gray-700 hover:text-red-500">About</a>
-          <a href="#member" class="text-gray-700 hover:text-red-500">Member</a>
-        </div>
-  
-        <!-- Hamburger Menu (Mobile) -->
-        <button class="md:hidden focus:outline-none" onclick="toggleMenu()">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-          </svg>
-        </button>
+  <!-- Navbar -->
+<nav class="fixed top-0 left-0 right-0 w-full bg-slate-200  z-50">
+  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+    <!-- Logo -->
+    <a href="#hero">
+      <div class="flex items-center font-semibold scale-125">
+        <span class="text-red-700 font-bold">U</span>BIGKOSBOY
       </div>
-  
-      <!-- Mobile Menu -->
-      <div id="mobile-menu" class="hidden absolute top-full left-0 right-0 bg-white shadow-md md:hidden z-50">
-        <div class="container mx-auto px-5 py-2 mb-2">
-          <a href="#hero" class="block py-2 text-gray-700 hover:text-red-500">Home</a>
-          <a href="#about" class="block py-2 text-gray-700 hover:text-red-500">About</a>
-          <a href="#member" class="block py-2 text-gray-700 hover:text-red-500">Member</a>
-        </div>
-      </div>
-    </nav>
-  
+    </a>
+
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex md:space-x-4">
+      <a href="#hero" class="text-gray-700 hover:text-red-500">Home</a>
+      <a href="#about" class="text-gray-700 hover:text-red-500">About</a>
+      <a href="#member" class="text-gray-700 hover:text-red-500">Member</a>
+    </div>
+
+    <!-- Hamburger Menu (Mobile) -->
+    <button class="md:hidden focus:outline-none" onclick="toggleMenu()">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden absolute top-full left-0 right-0 bg-white bg-opacity-80 backdrop-blur-sm shadow-md md:hidden z-50">
+    <div class="container mx-auto px-5 py-2 mb-2">
+      <a href="#hero" class="block py-2 text-gray-700 hover:text-red-500">Home</a>
+      <a href="#about" class="block py-2 text-gray-700 hover:text-red-500">About</a>
+      <a href="#member" class="block py-2 text-gray-700 hover:text-red-500">Member</a>
+    </div>
+  </div>
+</nav>
     <!-- Hero Section dengan Meteor -->
     <section id="hero" class="relative bg-slate-900 py-12 md:py-28">
       <!-- Meteor Overlay -->
@@ -294,14 +297,7 @@
     <!-- Section Member dengan Meteor -->
     <section id="member" class="relative bg-gray-100
      py-16 md:py-24">
-      <!-- Meteor Overlay -->
-      <div class="meteors">
-        <div class="meteor"></div>
-        <div class="meteor"></div>
-        <div class="meteor"></div>
-        <div class="meteor"></div>
-        <div class="meteor"></div>
-      </div>
+     
       <div class="container mx-auto px-6">
         <div class="text-center mb-12">
           <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">
@@ -345,125 +341,20 @@
   
           <!-- Card 3 -->
           <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 w-full max-w-xs">
-            <img src="https://placehold.co/400x300" alt="Member 3" class="w-full h-48 object-cover bg-gray-200">
+            <img src="img/r2jpg.jpg" alt="Member 3" class="w-full h-48 object-cover bg-gray-200">
             <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-800">John Doe</h3>
-              <p class="text-red-600 text-sm mb-4">Lead Developer</p>
+              <h3 class="text-xl font-bold text-gray-800">Richo Ferdinand</h3>
+              <p class="text-red-600 text-sm mb-4">Akademik Ubig</p>
               <p class="text-gray-600 text-sm mb-4">
-                Spesialis backend development 
+              Spesialis Administrasi
               </p>
-              <button onclick="window.location.href='#'" class="w-full bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">
+              <button onclick="window.location.href='Richo.html'" class="w-full bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">
                 Lihat Profil
               </button>
             </div>
           </div>
   
-          <!-- Card 4 -->
-          <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 w-full max-w-xs">
-            <img src="https://placehold.co/400x300" alt="Member 4" class="w-full h-48 object-cover bg-gray-200">
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-800">John Doe</h3>
-              <p class="text-red-600 text-sm mb-4">Lead Developer</p>
-              <p class="text-gray-600 text-sm mb-4">
-                Spesialis backend development dengan pengalaman 8+ tahun
-              </p>
-              <button onclick="window.location.href='#'" class="w-full bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">
-                Lihat Profil
-              </button>
-            </div>
-          </div>
-  
-          <!-- Card 5 -->
-          <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 w-full max-w-xs">
-            <img src="https://placehold.co/400x300" alt="Member 5" class="w-full h-48 object-cover bg-gray-200">
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-800">John Doe</h3>
-              <p class="text-red-600 text-sm mb-4">Lead Developer</p>
-              <p class="text-gray-600 text-sm mb-4">
-                Spesialis backend development dengan pengalaman 8+ tahun
-              </p>
-              <button onclick="window.location.href='#'" class="w-full bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">
-                Lihat Profil
-              </button>
-            </div>
-          </div>
-  
-          <!-- Card 6 -->
-          <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 w-full max-w-xs">
-            <img src="https://placehold.co/400x300" alt="Member 6" class="w-full h-48 object-cover bg-gray-200">
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-800">John Doe</h3>
-              <p class="text-red-600 text-sm mb-4">Lead Developer</p>
-              <p class="text-gray-600 text-sm mb-4">
-                Spesialis backend development dengan pengalaman 8+ tahun
-              </p>
-              <button onclick="window.location.href='#'" class="w-full bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">
-                Lihat Profil
-              </button>
-            </div>
-          </div>
-  
-          <!-- Card 7 -->
-          <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 w-full max-w-xs">
-            <img src="https://placehold.co/400x300" alt="Member 7" class="w-full h-48 object-cover bg-gray-200">
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-800">John Doe</h3>
-              <p class="text-red-600 text-sm mb-4">Lead Developer</p>
-              <p class="text-gray-600 text-sm mb-4">
-                Spesialis backend development dengan pengalaman 8+ tahun
-              </p>
-              <button onclick="window.location.href='#'" class="w-full bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">
-                Lihat Profil
-              </button>
-            </div>
-          </div>
-  
-          <!-- Card 8 -->
-          <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 w-full max-w-xs">
-            <img src="https://placehold.co/400x300" alt="Member 8" class="w-full h-48 object-cover bg-gray-200">
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-800">John Doe</h3>
-              <p class="text-red-600 text-sm mb-4">Lead Developer</p>
-              <p class="text-gray-600 text-sm mb-4">
-                Spesialis backend development dengan pengalaman 8+ tahun
-              </p>
-              <button onclick="window.location.href='#'" class="w-full bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">
-                Lihat Profil
-              </button>
-            </div>
-          </div>
-  
-          <!-- Card 9 -->
-          <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 w-full max-w-xs">
-            <img src="https://placehold.co/400x300" alt="Member 9" class="w-full h-48 object-cover bg-gray-200">
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-800">John Doe</h3>
-              <p class="text-red-600 text-sm mb-4">Lead Developer</p>
-              <p class="text-gray-600 text-sm mb-4">
-                Spesialis backend development dengan pengalaman 8+ tahun
-              </p>
-              <button onclick="window.location.href='#'" class="w-full bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">
-                Lihat Profil
-              </button>
-            </div>
-          </div>
-  
-          <!-- Card 10 -->
-          <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 w-full max-w-xs">
-            <img src="https://placehold.co/400x300" alt="Member 10" class="w-full h-48 object-cover bg-gray-200">
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-800">John Doe</h3>
-              <p class="text-red-600 text-sm mb-4">Lead Developer</p>
-              <p class="text-gray-600 text-sm mb-4">
-                Spesialis backend development dengan pengalaman 8+ tahun
-              </p>
-              <button onclick="window.location.href='#'" class="w-full bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">
-                Lihat Profil
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+
     </section>
   
     <!-- Footer dengan Meteor -->
@@ -526,5 +417,23 @@
         </div>
       </div>
     </footer>
+
+    <script>document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault(); // Mencegah perilaku default link
+        const targetId = this.getAttribute('href'); // Ambil nilai href
+        const targetElement = document.querySelector(targetId); // Cari elemen target
+    
+        if (targetElement) {
+          // Scroll ke elemen target dengan efek smooth
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+    </script>
+
   </body>
 </html>
